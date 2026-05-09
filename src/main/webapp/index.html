@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Certificate Generator</h1>
+            <p>Enter the details below to generate a beautiful certificate.</p>
+        </header>
+
+        <form action="generateCertificate" method="POST" class="cert-form">
+            <div class="form-group">
+                <label for="participantName">Participant Full Name</label>
+                <input type="text" id="participantName" name="participantName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="courseName">Course or Event Name</label>
+                <input type="text" id="courseName" name="courseName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="achievementDescription">Achievement Description</label>
+                <textarea id="achievementDescription" name="achievementDescription" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="issueDate">Date of Issue</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Generate Certificate</button>
+        </form>
+    </div>
+</body>
+</html>
